@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 .fs-0 {
   font-size: 0px !important; }
 
 .fs-8 {
   font-size: 8px !important; }
+
+.fs-11 {
+  font-size: 11px !important; }
 
 .fs-12 {
   font-size: 12px !important; }
@@ -13,6 +17,12 @@
 
 .fs-17 {
   font-size: 17px !important; }
+
+.fs-20 {
+  font-size: 20px !important; }
+
+.fs-23 {
+  font-size: 23px !important; }
 
 .fs-24 {
   font-size: 24px !important; }
@@ -44,9 +54,49 @@
 .fs-80 {
   font-size: 80px !important; }
 
+.font-weight-thin {
+  font-weight: 100 !important; }
+
+.font-weight-extra-light {
+  font-weight: 200 !important; }
+
+.font-weight-light {
+  font-weight: 300 !important; }
+
+.font-weight-regular {
+  font-weight: 400 !important; }
+
+.font-weight-medium {
+  font-weight: 500 !important; }
+
+.font-weight-semi-bold {
+  font-weight: 600 !important; }
+
+.font-weight-bold {
+  font-weight: 700 !important; }
+
+.font-weight-extra-bold {
+  font-weight: 800 !important; }
+
 body {
   background: #f8fafc;
   font-family: "Roboto", sans-serif; }
 
-header .header-top .nav-brand {
-  max-width: 150px; }
+header .header-top {
+  font-family: "Poppins", sans-serif; }
+  header .header-top .nav-brand {
+    max-width: 150px; }
+    header .header-top .nav-brand img {
+      width: 100%; }
+    @media (max-width: 992px) {
+      header .header-top .nav-brand {
+        max-width: 120px;
+        margin-right: 16px; } }
+  header .header-top .policy-desc {
+    color: #6B7280;
+    font-size: 11px; }
+  @media (min-width: 1200px) {
+    header .header-top {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto; } }
