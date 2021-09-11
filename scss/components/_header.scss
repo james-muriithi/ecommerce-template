@@ -1,3 +1,5 @@
+/* Header Section */
+
 header {
     .header-top {
         font-family: $font-family-poppins;
@@ -16,9 +18,51 @@ header {
             font-size: 11px;
         }
         @media (min-width: $xl) {
-            width: 90%;
-            margin-left: auto;
-            margin-right: auto;
+            // width: 90%;
+            // margin-left: auto;
+            // margin-right: auto;
+        }
+    }
+    .header-menu {
+        background: $primary;
+        nav {
+            font-family: $font-family-poppins;
+            .nav-item {
+                line-height: 20px;
+                .nav-link {
+                    color: #85c1ff;
+                    text-transform: uppercase;
+                    &.active {
+                        color: $light;
+                    }
+                }
+            }
+            .navbar-toggler {
+                border: none;
+                &.active,
+                &:active,
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+        .search {
+            input {
+                box-shadow: none;
+                border: none;
+                font-size: 13px;
+                height: 43px;
+                padding-right: 40px;
+                &::placeholder {
+                    font-family: $font-family-poppins;
+                }
+                +.input-group-append {
+                    position: relative;
+                    right: 30px;
+                    top: 12px;
+                    z-index: 10;
+                }
+            }
         }
     }
 }

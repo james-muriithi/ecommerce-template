@@ -1,5 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+html,
+body {
+  background: #f8fafc;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 100%; }
+
+/* Header Section */
+header .header-top {
+  font-family: "Poppins", sans-serif; }
+  header .header-top .nav-brand {
+    max-width: 150px; }
+    header .header-top .nav-brand img {
+      width: 100%; }
+    @media (max-width: 992px) {
+      header .header-top .nav-brand {
+        max-width: 120px;
+        margin-right: 16px; } }
+  header .header-top .policy-desc {
+    color: #6B7280;
+    font-size: 11px; }
+
+header .header-menu {
+  background: #0c549f !important; }
+  header .header-menu nav {
+    font-family: "Poppins", sans-serif; }
+    header .header-menu nav .nav-item {
+      line-height: 20px; }
+      header .header-menu nav .nav-item .nav-link {
+        color: #85c1ff;
+        text-transform: uppercase; }
+        header .header-menu nav .nav-item .nav-link.active {
+          color: #f8fafc; }
+    header .header-menu nav .navbar-toggler {
+      border: none; }
+      header .header-menu nav .navbar-toggler.active, header .header-menu nav .navbar-toggler:active, header .header-menu nav .navbar-toggler:focus {
+        box-shadow: none; }
+  header .header-menu .search input {
+    box-shadow: none;
+    border: none;
+    font-size: 13px;
+    height: 43px;
+    padding-right: 40px; }
+    header .header-menu .search input::placeholder {
+      font-family: "Poppins", sans-serif; }
+    header .header-menu .search input + .input-group-append {
+      position: relative;
+      right: 30px;
+      top: 12px;
+      z-index: 10; }
+
+/* Utilities */
 .fs-0 {
   font-size: 0px !important; }
 
@@ -11,6 +63,9 @@
 
 .fs-12 {
   font-size: 12px !important; }
+
+.fs-13 {
+  font-size: 13px !important; }
 
 .fs-16 {
   font-size: 16px !important; }
@@ -77,26 +132,3 @@
 
 .font-weight-extra-bold {
   font-weight: 800 !important; }
-
-body {
-  background: #f8fafc;
-  font-family: "Roboto", sans-serif; }
-
-header .header-top {
-  font-family: "Poppins", sans-serif; }
-  header .header-top .nav-brand {
-    max-width: 150px; }
-    header .header-top .nav-brand img {
-      width: 100%; }
-    @media (max-width: 992px) {
-      header .header-top .nav-brand {
-        max-width: 120px;
-        margin-right: 16px; } }
-  header .header-top .policy-desc {
-    color: #6B7280;
-    font-size: 11px; }
-  @media (min-width: 1200px) {
-    header .header-top {
-      width: 90%;
-      margin-left: auto;
-      margin-right: auto; } }
