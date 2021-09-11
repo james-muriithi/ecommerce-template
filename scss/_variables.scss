@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300;1,700&display=swap");
+// Body
+$light: #f8fafc;
+$body-bg: $light;
+// Typography
+$font-family: 'Roboto',
+sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$white: #fff !default;
+$gray-100: #F3F4F6 !default;
+$gray-200: #E5E7EB !default;
+$gray-300: #D1D5DB !default;
+$gray-400: #9CA3AF !default;
+$gray-500: #6B7280 !default;
+$gray-600: #4B5563 !default;
+$gray-700: #374151 !default;
+$gray-800: #1F2937 !default;
+$gray-900: #111827 !default;
+//screen sizes
+$sm: 576px;
+$md: 768px;
+$l: 992px;
+$xl: 1200px;
+$primary: #0c549f;
+$placeholder-color: #333333;
+// dark version
+$dark-bg: #292929;
+$dark-forground: #202020;
+$dark-heading: #d8d8d8;
+$theme-colors: ( primary: $primary, //   secondary: $secondary,
+//   success: $success,
+//   info: $info,
+//   warning: $warning,
+//   danger: $danger,
+//   light: $light,
+//   dark: $dark
+) !default;
