@@ -20,27 +20,48 @@
                 padding-left: 4px;
                 position: relative;
             }
+            @media (max-width: 546px) {
+                font-size: 1.5rem;
+                padding: 0 0 4px;
+            }
         }
         .product-title {
             font-size: 2rem;
             padding: 0 15px 21px;
             font-weight: 200;
             line-height: 50px;
+            @media (max-width: 546px) {
+                font-size: 1.5rem;
+                padding: 15px 8px 55px;
+                line-height: 30px;
+            }
         }
         .product-desc {
             font-weight: 300;
             line-height: 26px;
             padding: 0 15px;
             margin-bottom: 28px;
+            @media (max-width: 546px) {
+                display: none;
+            }
+            @media (max-width: 767px) {
+                font-size: 13px;
+                line-height: 20px;
+            }
         }
         .buy-now {
-            color: #fd6666;
             font-size: 1rem;
             font-weight: 800;
-            text-decoration: none;
+            a {
+                text-decoration: none;
+                color: #fd6666;
+            }
+            @media (max-width: 546px) {
+                margin-top: 40px;
+            }
         }
         .caption-2 {
-            .buy-now {
+            .buy-now a {
                 color: $light;
             }
         }
@@ -49,14 +70,26 @@
                 color: #559fea;
             }
         }
+        @media (max-width: 976px) {
+            top: 20%;
+        }
     }
     .owl-carousel {
         .owl-stage-outer {
-            height: 100%;
             .owl-stage {
-                height: 100%;
-                img {
-                    height: 100%;
+                .owl-item {
+                    .item img {
+                        height: 100% !important;
+                        @media (max-width: $l) {
+                            height: 600px !important;
+                        }
+                        @media (max-width: $md) {
+                            height: 400px !important;
+                        }
+                        @media (max-width: $sm) {
+                            height: 300px !important;
+                        }
+                    }
                 }
             }
         }
@@ -96,6 +129,10 @@
                 }
                 &:hover {
                     background: $primary;
+                }
+                @media (max-width: $md) {
+                    top: 40%;
+                    padding: 8px !important;
                 }
             }
         }

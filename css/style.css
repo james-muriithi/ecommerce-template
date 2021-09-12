@@ -71,31 +71,59 @@ header .header-menu {
         top: -5px;
         padding-left: 4px;
         position: relative; }
+      @media (max-width: 546px) {
+        .banner .slider-caption .caption-price {
+          font-size: 1.5rem;
+          padding: 0 0 4px; } }
     .banner .slider-caption .product-title {
       font-size: 2rem;
       padding: 0 15px 21px;
       font-weight: 200;
       line-height: 50px; }
+      @media (max-width: 546px) {
+        .banner .slider-caption .product-title {
+          font-size: 1.5rem;
+          padding: 15px 8px 55px;
+          line-height: 30px; } }
     .banner .slider-caption .product-desc {
       font-weight: 300;
       line-height: 26px;
       padding: 0 15px;
       margin-bottom: 28px; }
+      @media (max-width: 546px) {
+        .banner .slider-caption .product-desc {
+          display: none; } }
+      @media (max-width: 767px) {
+        .banner .slider-caption .product-desc {
+          font-size: 13px;
+          line-height: 20px; } }
     .banner .slider-caption .buy-now {
-      color: #fd6666;
       font-size: 1rem;
-      font-weight: 800;
-      text-decoration: none; }
-    .banner .slider-caption .caption-2 .buy-now {
+      font-weight: 800; }
+      .banner .slider-caption .buy-now a {
+        text-decoration: none;
+        color: #fd6666; }
+      @media (max-width: 546px) {
+        .banner .slider-caption .buy-now {
+          margin-top: 40px; } }
+    .banner .slider-caption .caption-2 .buy-now a {
       color: #f8fafc; }
     .banner .slider-caption .caption-3 .caption-price {
       color: #559fea; }
-  .banner .owl-carousel .owl-stage-outer {
-    height: 100%; }
-    .banner .owl-carousel .owl-stage-outer .owl-stage {
-      height: 100%; }
-      .banner .owl-carousel .owl-stage-outer .owl-stage img {
-        height: 100%; }
+    @media (max-width: 976px) {
+      .banner .slider-caption {
+        top: 20%; } }
+  .banner .owl-carousel .owl-stage-outer .owl-stage .owl-item .item img {
+    height: 100% !important; }
+    @media (max-width: 992px) {
+      .banner .owl-carousel .owl-stage-outer .owl-stage .owl-item .item img {
+        height: 600px !important; } }
+    @media (max-width: 768px) {
+      .banner .owl-carousel .owl-stage-outer .owl-stage .owl-item .item img {
+        height: 400px !important; } }
+    @media (max-width: 576px) {
+      .banner .owl-carousel .owl-stage-outer .owl-stage .owl-item .item img {
+        height: 300px !important; } }
   .banner .owl-carousel .owl-nav .owl-prev {
     left: 0;
     -webkit-border-radius: 0 8px 8px 0;
@@ -130,6 +158,103 @@ header .header-menu {
     .banner .owl-carousel .owl-nav .owl-prev:hover,
     .banner .owl-carousel .owl-nav .owl-next:hover {
       background: #0c549f !important; }
+    @media (max-width: 768px) {
+      .banner .owl-carousel .owl-nav .owl-prev,
+      .banner .owl-carousel .owl-nav .owl-next {
+        top: 40%;
+        padding: 8px !important; } }
+
+.gallery-image .gallery-image-item {
+  position: relative;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-align: center; }
+  .gallery-image .gallery-image-item::after {
+    content: "";
+    display: inline-block;
+    width: 150%;
+    height: 80%;
+    position: absolute;
+    top: -75%;
+    right: 32%;
+    background: rgba(255, 255, 255, 0.15);
+    -webkit-transform: skewY(-50deg);
+    -ms-transform: skewY(-50deg);
+    transform: skewY(-50deg);
+    -webkit-transition: all 0.35s ease;
+    -moz-transition: all 0.35s ease;
+    -ms-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+    transition: all 0.35s ease; }
+  .gallery-image .gallery-image-item:hover::after {
+    top: 120%;
+    right: -75%;
+    -webkit-transition: all 0.35s ease;
+    -moz-transition: all 0.35s ease;
+    -ms-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+    transition: all 0.35s ease; }
+
+@media (max-width: 562px) {
+  .collection-tabs .product-tabs {
+    padding-left: 4px; } }
+
+.collection-tabs .product-tabs .header {
+  font-size: 1.6rem;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #1F2937;
+  text-transform: capitalize; }
+  .collection-tabs .product-tabs .header .title {
+    border-bottom: 1px solid #D1D5DB; }
+    .collection-tabs .product-tabs .header .title span {
+      position: relative;
+      display: inline-block;
+      padding-bottom: 10px; }
+      .collection-tabs .product-tabs .header .title span::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: #105caa;
+        left: 0;
+        bottom: -2px; }
+  .collection-tabs .product-tabs .header .list-menu {
+    padding: 8px 0;
+    border-bottom: 1px solid #D1D5DB !important;
+    font-family: "Roboto", sans-serif !important; }
+    .collection-tabs .product-tabs .header .list-menu nav {
+      font-size: 0.8rem; }
+      .collection-tabs .product-tabs .header .list-menu nav .nav-link {
+        padding-left: 12px;
+        padding-right: 12px;
+        color: #666;
+        line-height: 1.5;
+        font-weight: 400; }
+      @media (max-width: 992px) {
+        .collection-tabs .product-tabs .header .list-menu nav {
+          border-bottom: 1px solid #D1D5DB; } }
+    .collection-tabs .product-tabs .header .list-menu .nav-pills .nav-item {
+      font-weight: 700;
+      font-size: 0.8rem;
+      text-transform: uppercase; }
+      .collection-tabs .product-tabs .header .list-menu .nav-pills .nav-item .nav-link {
+        margin-left: 4px;
+        color: #222;
+        background: #f0f0f0;
+        padding-top: 11px;
+        padding-bottom: 11px; }
+        .collection-tabs .product-tabs .header .list-menu .nav-pills .nav-item .nav-link:hover, .collection-tabs .product-tabs .header .list-menu .nav-pills .nav-item .nav-link.active {
+          background: #105caa;
+          color: #fff; }
+        @media (max-width: 1200px) {
+          .collection-tabs .product-tabs .header .list-menu .nav-pills .nav-item .nav-link {
+            min-width: 130px !important; } }
+        @media (max-width: 562px) {
+          .collection-tabs .product-tabs .header .list-menu .nav-pills .nav-item .nav-link {
+            margin-top: 4px; } }
 
 /* Utilities */
 .fs-0 {

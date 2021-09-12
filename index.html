@@ -15,6 +15,10 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 
     <link rel="stylesheet" href="./css/style.css" />
 </head>
@@ -154,53 +158,164 @@
       </div>
     </header>
 
-    <div class="main-content mt-4 h-75">
-      <section class="banner h-100">
-        <div class="container h-100 p-0">
-          <div class="owl-carousel owl-theme h-100">
-            <div class="item h-100">
+    <div class="main-content mt-md-4  h-75">
+      <section class="banner">
+        <div class="container p-0">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
               <img src="./images/slider-1.jpg" alt="slider 1" />
               <div class="slider-caption">
                 <div class="caption-1">
-                  <div class="caption-price animate__animated animate__fadeInUp" data-animate="animate__fadeInUp">From <span>$</span>950</div>
-                  <div class="product-title animate__animated animate__bounceInLeft" data-animate="animate__bounceInLeft">Vinova SmartPhone</div>
-                  <div class="product-desc ms-2 me-4 animate__animated animate__bounceInRight" data-animate="animate__bounceInRight">
+                  <div
+                    class="caption-price animate__animated animate__fadeInUp"
+                    data-animate="animate__fadeInUp"
+                  >
+                    From <span>$</span>950
+                  </div>
+                  <div
+                    class="
+                      product-title
+                      animate__animated animate__bounceInLeft
+                    "
+                    data-animate="animate__bounceInLeft"
+                  >
+                    Vinova SmartPhone
+                  </div>
+                  <div
+                    class="
+                      product-desc
+                      ms-2
+                      me-4
+                      animate__animated animate__bounceInRight
+                    "
+                    data-animate="animate__bounceInRight"
+                  >
                     All ‑screen design. Longest battery life ever in an
                     NovaPhone. Fastest performance. Studio‑quality photos.
                   </div>
-                  <a href="#" class="buy-now animate__animated animate__fadeInDown" data-animate="animate__fadeInDown"> Buy Now </a>
+                  <div class="buy-now">
+                    <a
+                      href="#"
+                      class="animate__animated animate__fadeInDown"
+                      data-animate="animate__fadeInDown"
+                    >
+                      Buy Now
+                    </a>
                                 </div>
                             </div>
                     </div>
-                    <div class="item">
-                        <img src="./images/slider-2.jpg" alt="slider 2" />
-                        <div class="slider-caption">
-                            <div class="caption-2">
-                                <div class="caption-price animate__animated" data-animate="animate__flipInX">From <span>$</span>550</div>
-                                <div class="product-title animate__animated" data-animate="animate__fadeInDownBig">SmartWatch Series 3</div>
-                                <div class="product-desc ms-2 me-4 animate__animated" data-animate="animate__fadeInDown">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac mauris quis purus congue elementum.
-                                </div>
-                                <a href="#" class="buy-now animate__animated" data-animate="animate__lightSpeedInRight"> Buy Now </a>
+                </div>
+                <div class="item">
+                    <img src="./images/slider-2.jpg" alt="slider 2" />
+                    <div class="slider-caption">
+                        <div class="caption-2">
+                            <div class="caption-price animate__animated" data-animate="animate__flipInX">
+                                From <span>$</span>550
+                            </div>
+                            <div class="product-title animate__animated" data-animate="animate__fadeInDownBig">
+                                SmartWatch Series 3
+                            </div>
+                            <div class="product-desc ms-2 me-4 animate__animated" data-animate="animate__fadeInDown">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac mauris quis purus congue elementum.
+                            </div>
+                            <div class="buy-now">
+                                <a href="#" class="animate__animated" data-animate="animate__lightSpeedInRight">
+                      Buy Now
+                    </a>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <img src="./images/slider-3.jpg" alt="slider 3" />
-                        <div class="slider-caption">
-                            <div class="caption-3">
-                                <div class="caption-price animate__animated" data-animate="animate__slideInUp">From <span>$</span>550</div>
-                                <div class="product-title animate__animated" data-animate="animate__lightSpeedInRight">QLED 8K</div>
-                                <div class="product-desc ms-2 me-4 animate__animated" data-animate="animate__slideInLeft">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac mauris quis purus congue elementum.
-                                </div>
-                                <a href="#" class="buy-now animate__animated" data-animate="animate__slideInDown"> Buy Now </a>
+                </div>
+                <div class="item">
+                    <img src="./images/slider-3.jpg" alt="slider 3" />
+                    <div class="slider-caption">
+                        <div class="caption-3">
+                            <div class="caption-price animate__animated" data-animate="animate__slideInUp">
+                                From <span>$</span>550
+                            </div>
+                            <div class="product-title animate__animated" data-animate="animate__lightSpeedInRight">
+                                QLED 8K
+                            </div>
+                            <div class="product-desc ms-2 me-4 animate__animated" data-animate="animate__slideInLeft">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac mauris quis purus congue elementum.
+                            </div>
+                            <div class="buy-now">
+                                <a href="#" class="animate__animated" data-animate="animate__slideInDown">
+                      Buy Now
+                    </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            </section>
+        </div>
+        </section>
+        <section class="gallery-image">
+            <div class="container p-0">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="gallery-image-item">
+                            <a href="/">
+                                <img class="w-100" src="https://cdn.shopify.com/s/files/1/0272/1493/8165/files/banner-1_63af23ba-4449-45db-92c3-fd8e55c7c649_1920x1920.jpg?v=1602131118" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="gallery-image-item">
+                            <a href="/">
+                                <img class="w-100" src="https://cdn.shopify.com/s/files/1/0272/1493/8165/files/banner-2_877f4ae1-90d8-45f9-8e97-36b9de6dc297_1920x1920.jpg?v=1602139600" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="collection-tabs mt-4">
+            <div class="container p-0">
+                <div class="product-tabs">
+                    <div class="header">
+                        <div class="title">
+                            <span>SmartPhone</span>
+                        </div>
+                        <div class="list-menu">
+                            <div class="row">
+                                <div class="col-lg-7 pe-0">
+                                    <nav class="nav">
+                                        <a class="nav-link active" aria-current="page" href="#">Motorola</a>
+                                        <a class="nav-link" href="#">Lenovo</a>
+                                        <a class="nav-link" href="#">Xiaomi</a>
+                                        <a class="nav-link" href="#">OPPO</a>
+                                        <a class="nav-link" href="#">HTC</a>
+                                        <a class="nav-link" href="#">Sony Xperia</a>
+                                        <a class="nav-link" href="#">Samsung</a>
+                                        <a class="nav-link" href="#">Iphone</a>
+                                    </nav>
+                                </div>
+                                <div class="col-lg-5 px-2 px-lg-0 pt-1 pt-lg-0">
+                                    <ul class="nav nav-pills">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="pill" data-bs-target="#nav-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">New Arrivals</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Best Sellers</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">On sale</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-tabs-details mt-4">
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
         </div>
 
         <!-- jquery -->
@@ -209,7 +324,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js" integrity="sha512-trzlduO3EdG7Q0xK4+A+rPbcolVt37ftugUSOvrHhLR5Yw5rsfWXcpB3CPuEBcRBCHpc+j18xtQ6YrtVPKCdsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- owl carousel -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+        <!-- slick slider -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script>
             let owl = $(".owl-carousel");
             owl.owlCarousel({
@@ -231,26 +347,34 @@
                 },
             });
 
-            owl.on('change.owl.carousel', function(event) {
-                var item = event.item.index - 2;
+            owl.on("change.owl.carousel", function(event) {
+                var item = event.page.index;
 
-                $('.owl-item').not('.cloned').eq(item).find('.animate__animated').each(function() {
-                    let animationClass = $(this).data('animate');
-                    if (animationClass) {
-                        $(this).removeClass(animationClass);
-                    }
-                });
+                $(".owl-item")
+                    .not(".cloned")
+                    .eq(item)
+                    .find(".animate__animated")
+                    .each(function() {
+                        let animationClass = $(this).data("animate");
+                        if (animationClass) {
+                            $(this).removeClass(animationClass);
+                        }
+                    });
             });
 
-            owl.on('changed.owl.carousel', function(event) {
+            owl.on("changed.owl.carousel", function(event) {
                 var item = event.page.index; // Position of the current item
-                $('.owl-item').not('.cloned').eq(item).find('.animate__animated').each(function() {
-                    // $(this).find('.animated').removeClass('animate__animated');
-                    let animationClass = $(this).data('animate');
-                    if (animationClass) {
-                        $(this).addClass(animationClass);
-                    }
-                });
+
+                $(".owl-item")
+                    .not(".cloned")
+                    .eq(item)
+                    .find(".animate__animated")
+                    .each(function() {
+                        let animationClass = $(this).data("animate");
+                        if (animationClass) {
+                            $(this).addClass(animationClass);
+                        }
+                    });
             });
         </script>
 </body>
