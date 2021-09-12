@@ -11,6 +11,8 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/css/bootstrap.min.css" integrity="sha512-6KY5s6UI5J7SVYuZB4S/CZMyPylqyyNZco376NM2Z8Sb8OxEdp02e1jkKk/wZxIEmjQ6DRCEBhni+gpr9c4tvA==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 
     <link rel="stylesheet" href="./css/style.css" />
 </head>
@@ -28,7 +30,7 @@
                             <div class="col-3 d-none d-md-block">
                                 <div class="d-flex fs-12 align-items-center text-uppercase">
                                     <div class="policy-icon me-3">
-                                        <img src="./images/icons/truck.png" alt="delivery" width="34" height="34">
+                                        <img src="./images/icons/truck.png" alt="delivery" width="34" height="34" />
                                     </div>
                                     <div class="policy-desc font-weight-medium">
                                         free delivery from $250
@@ -38,7 +40,7 @@
                             <div class="col-3 d-none d-md-block">
                                 <div class="d-flex fs-12 align-items-center text-uppercase">
                                     <div class="policy-icon me-3">
-                                        <img src="./images/icons/money-back.png" alt="delivery" width="34" height="34">
+                                        <img src="./images/icons/money-back.png" alt="delivery" width="34" height="34" />
                                     </div>
                                     <div class="policy-desc font-weight-medium">
                                         MONEY BACK GUARANTEED
@@ -48,14 +50,20 @@
                             <div class="col-3 d-none d-md-block">
                                 <div class="d-flex fs-12 align-items-center text-uppercase">
                                     <div class="policy-icon me-3">
-                                        <img src="./images/icons/wallet.png" alt="delivery" width="34" height="34">
+                                        <img src="./images/icons/wallet.png" alt="delivery" width="34" height="34" />
                                     </div>
-                                    <div class="policy-desc font-weight-medium ">
+                                    <div class="policy-desc font-weight-medium">
                                         CASH ON DELIVERY FROM $ 50
                                     </div>
                                 </div>
                             </div>
-                            <div class="align-items-center col-3 d-flex justify-content-between ps-3">
+                            <div class="
+                    align-items-center
+                    col-3
+                    d-flex
+                    justify-content-between
+                    ps-3
+                  ">
                                 <div class="account px-2">
                                     <i class="fa fa-user fs-20"></i>
                                 </div>
@@ -78,63 +86,148 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-7">
-                        <nav class="navbar navbar-expand-lg navbar-dark fs-13 font-weight-medium">
+                        <nav class="
+                  navbar navbar-expand-lg navbar-dark
+                  fs-13
+                  font-weight-medium
+                ">
                             <div class="">
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                         <li class="nav-item">
-                                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                All Demos
-                                            </a>
+                                            <a class="nav-link active" aria-current="page" href="#">Home</a
+                        >
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          href="#"
+                          id="navbarDropdown"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          All Demos
+                        </a>
                                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                                 <li><a class="dropdown-item" href="#">Action</a></li>
-                                                <li><a class="dropdown-item" href="#">Another action</a></li>
                                                 <li>
-                                                    <hr class="dropdown-divider">
+                                                    <a class="dropdown-item" href="#">Another action</a>
                                                 </li>
-                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+                                                <li>
+                                                    <hr class="dropdown-divider" />
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Something else here</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div class="col-md-5">
+              <div class="search">
+                <form action="#">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      placeholder="Enter your keyword"
+                      class="form-control rounded-pill ps-4"
+                    />
+                    <span class="input-group-append">
+                      <i class="fa fa-search fs-16"></i>
+                    </span>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-content mt-4 h-75">
+      <section class="banner h-100">
+        <div class="container h-100 p-0">
+          <div class="owl-carousel owl-theme h-100">
+            <div class="item h-100">
+              <img src="./images/slider-1.jpg" alt="slider 1" />
+              <div class="slider-caption">
+                <div class="caption-1">
+                  <div class="caption-price">From <span>$</span>950</div>
+                  <div class="product-title">Vinova SmartPhone</div>
+                  <div class="product-desc ms-2 me-4">
+                    All ‑screen design. Longest battery life ever in an
+                    NovaPhone. Fastest performance. Studio‑quality photos.
+                  </div>
+                  <a href="#" class="buy-now"> Buy Now </a>
                                 </div>
                             </div>
-                        </nav>
                     </div>
-                    <div class="col-md-5">
-                        <div class="search">
-                            <form action="#">
-                                <div class="input-group">
-                                    <input type="text" placeholder="Enter your keyword" class="form-control rounded-pill ps-4">
-                                    <span class="input-group-append">
-                                        <i class="fa fa-search fs-16"></i>
-                                    </span>
+                    <div class="item">
+                        <img src="./images/slider-2.jpg" alt="slider 2" />
+                        <div class="slider-caption">
+                            <div class="caption-2">
+                                <div class="caption-price">From <span>$</span>550</div>
+                                <div class="product-title">SmartWatch Series 3</div>
+                                <div class="product-desc ms-2 me-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac mauris quis purus congue elementum.
                                 </div>
-                            </form>
+                                <a href="#" class="buy-now"> Buy Now </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./images/slider-3.jpg" alt="slider 3" />
+                        <div class="slider-caption">
+                            <div class="caption-3">
+                                <div class="caption-price">From <span>$</span>550</div>
+                                <div class="product-title">QLED 8K</div>
+                                <div class="product-desc ms-2 me-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac mauris quis purus congue elementum.
+                                </div>
+                                <a href="#" class="buy-now"> Buy Now </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            </section>
         </div>
-    </header>
 
-    <div class="main-content mt-4 h-75">
-        <section class="banner h-100">
-            <div class="container h-100">
-                <div class="slider h-100">
+        <!-- jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- bootstrap -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js" integrity="sha512-trzlduO3EdG7Q0xK4+A+rPbcolVt37ftugUSOvrHhLR5Yw5rsfWXcpB3CPuEBcRBCHpc+j18xtQ6YrtVPKCdsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- owl carousel -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- bootstrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js" integrity="sha512-trzlduO3EdG7Q0xK4+A+rPbcolVt37ftugUSOvrHhLR5Yw5rsfWXcpB3CPuEBcRBCHpc+j18xtQ6YrtVPKCdsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                lazyLoad: true,
+                navText: [
+                    "<i class='fa fa-chevron-left'></i>",
+                    "<i class='fa fa-chevron-right'></i>",
+                ],
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    1000: {
+                        items: 1,
+                    },
+                },
+            });
+        </script>
 </body>
 
 </html>
