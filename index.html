@@ -13,6 +13,8 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 
     <link rel="stylesheet" href="./css/style.css" />
 </head>
@@ -160,13 +162,13 @@
               <img src="./images/slider-1.jpg" alt="slider 1" />
               <div class="slider-caption">
                 <div class="caption-1">
-                  <div class="caption-price">From <span>$</span>950</div>
-                  <div class="product-title">Vinova SmartPhone</div>
-                  <div class="product-desc ms-2 me-4">
+                  <div class="caption-price animate__animated animate__fadeInUp" data-animate="animate__fadeInUp">From <span>$</span>950</div>
+                  <div class="product-title animate__animated animate__bounceInLeft" data-animate="animate__bounceInLeft">Vinova SmartPhone</div>
+                  <div class="product-desc ms-2 me-4 animate__animated animate__bounceInRight" data-animate="animate__bounceInRight">
                     All ‑screen design. Longest battery life ever in an
                     NovaPhone. Fastest performance. Studio‑quality photos.
                   </div>
-                  <a href="#" class="buy-now"> Buy Now </a>
+                  <a href="#" class="buy-now animate__animated animate__fadeInDown" data-animate="animate__fadeInDown"> Buy Now </a>
                                 </div>
                             </div>
                     </div>
@@ -174,12 +176,12 @@
                         <img src="./images/slider-2.jpg" alt="slider 2" />
                         <div class="slider-caption">
                             <div class="caption-2">
-                                <div class="caption-price">From <span>$</span>550</div>
-                                <div class="product-title">SmartWatch Series 3</div>
-                                <div class="product-desc ms-2 me-4">
+                                <div class="caption-price animate__animated" data-animate="animate__flipInX">From <span>$</span>550</div>
+                                <div class="product-title animate__animated" data-animate="animate__fadeInDownBig">SmartWatch Series 3</div>
+                                <div class="product-desc ms-2 me-4 animate__animated" data-animate="animate__fadeInDown">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac mauris quis purus congue elementum.
                                 </div>
-                                <a href="#" class="buy-now"> Buy Now </a>
+                                <a href="#" class="buy-now animate__animated" data-animate="animate__lightSpeedInRight"> Buy Now </a>
                             </div>
                         </div>
                     </div>
@@ -187,12 +189,12 @@
                         <img src="./images/slider-3.jpg" alt="slider 3" />
                         <div class="slider-caption">
                             <div class="caption-3">
-                                <div class="caption-price">From <span>$</span>550</div>
-                                <div class="product-title">QLED 8K</div>
-                                <div class="product-desc ms-2 me-4">
+                                <div class="caption-price animate__animated" data-animate="animate__slideInUp">From <span>$</span>550</div>
+                                <div class="product-title animate__animated" data-animate="animate__lightSpeedInRight">QLED 8K</div>
+                                <div class="product-desc ms-2 me-4 animate__animated" data-animate="animate__slideInLeft">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac mauris quis purus congue elementum.
                                 </div>
-                                <a href="#" class="buy-now"> Buy Now </a>
+                                <a href="#" class="buy-now animate__animated" data-animate="animate__slideInDown"> Buy Now </a>
                             </div>
                         </div>
                     </div>
@@ -209,7 +211,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
         <script>
-            $(".owl-carousel").owlCarousel({
+            let owl = $(".owl-carousel");
+            owl.owlCarousel({
                 loop: true,
                 margin: 10,
                 nav: true,
@@ -226,6 +229,28 @@
                         items: 1,
                     },
                 },
+            });
+
+            owl.on('change.owl.carousel', function(event) {
+                var item = event.item.index - 2;
+
+                $('.owl-item').not('.cloned').eq(item).find('.animate__animated').each(function() {
+                    let animationClass = $(this).data('animate');
+                    if (animationClass) {
+                        $(this).removeClass(animationClass);
+                    }
+                });
+            });
+
+            owl.on('changed.owl.carousel', function(event) {
+                var item = event.page.index; // Position of the current item
+                $('.owl-item').not('.cloned').eq(item).find('.animate__animated').each(function() {
+                    // $(this).find('.animated').removeClass('animate__animated');
+                    let animationClass = $(this).data('animate');
+                    if (animationClass) {
+                        $(this).addClass(animationClass);
+                    }
+                });
             });
         </script>
 </body>

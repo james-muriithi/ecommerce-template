@@ -94,6 +94,8 @@ header .header-menu {
     height: 100%; }
     .banner .owl-carousel .owl-stage-outer .owl-stage {
       height: 100%; }
+      .banner .owl-carousel .owl-stage-outer .owl-stage img {
+        height: 100%; }
   .banner .owl-carousel .owl-nav .owl-prev {
     left: 0;
     -webkit-border-radius: 0 8px 8px 0;
