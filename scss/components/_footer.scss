@@ -1,0 +1,142 @@
+footer {
+    background: #0d1c2f;
+    p {
+        margin-bottom: 0px !important;
+    }
+    .footer-top {
+        border-bottom: 1px solid rgba(255, 255, 255, .1);
+        .footer-logo {
+            margin-bottom: 22px;
+        }
+        .contact {
+            margin-top: 22px;
+            .support {
+                .icon_support {
+                    margin-right: 15px;
+                    min-width: 30px;
+                }
+                .content {
+                    p.text {
+                        font-family: $font-family;
+                        font-size: 13px;
+                        font-weight: 400;
+                        color: #6eabeb;
+                    }
+                    .contact_support {
+                        font-family: $font-family-poppins;
+                        font-size: 1.1rem;
+                        font-weight: 700;
+                        color: $light;
+                        margin-top: 5px;
+                        display: inline-block;
+                    }
+                }
+            }
+            .address {
+                .icon_address {
+                    margin-right: 15px;
+                    min-width: 30px;
+                }
+                .contact_address {
+                    font-family: $font-family-poppins;
+                    font-size: 0.85rem;
+                    font-weight: 700;
+                    color: $light;
+                    margin-bottom: 8px;
+                    display: inline-block;
+                }
+                p.text {
+                    font-family: $font-family;
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: #6eabeb;
+                }
+            }
+        }
+        .footer-menu {
+            .title-block {
+                font-size: 0.8rem;
+                color: $light;
+                margin-bottom: 13px;
+                font-family: $font-family-poppins;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+            .footer-links {
+                padding-top: 3px;
+                font-family: $font-family;
+                a {
+                    font-size: 13px;
+                    color: #6eabeb;
+                    font-weight: 400;
+                    &:hover {
+                        color: #ffdd22;
+                    }
+                }
+            }
+        }
+        .footer-newsletter {
+            .title-block {
+                font-size: 0.9rem;
+                color: $light;
+                margin-bottom: 13px;
+                font-family: $font-family-poppins;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+            .footer-newsletter {
+                position: relative;
+                margin-bottom: 40px;
+                form {
+                    display: flex;
+                    input {
+                        width: 100%;
+                        height: 46px;
+                        border: none;
+                        font-size: 13px;
+                        font-family: $font-family;
+                        font-weight: 400;
+                        margin-bottom: 10px;
+                        border-radius: 2px;
+                        padding: 0 15px 2px;
+                        box-shadow: none;
+                    }
+                    .input-group-btn {
+                        margin-left: 5px;
+                        button {
+                            min-width: 91px;
+                            height: 46px;
+                            line-height: 46px;
+                            padding: 0 15.36px;
+                            background: #fd2;
+                            border-radius: 2px;
+                            font-family: $font-family;
+                            font-size: 11px;
+                            color: #000;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+        .social_footer .footer-social-icons {
+            li:not(:last-child) {
+                margin-right: 19px;
+            }
+            li a i {
+                font-size: 1.2rem;
+                color: #fff;
+            }
+        }
+    }
+    .footer-copyright {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        .copyright {
+            font-family: $font-family;
+            font-size: 12px;
+            color: $light;
+            font-weight: 700;
+        }
+    }
+}
