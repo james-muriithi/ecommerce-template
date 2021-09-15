@@ -93,4 +93,37 @@ $(function() {
             }
         }]
     });
+
+    $('.slick-slider3').slick({
+        arrows: false,
+        slidesToShow: 1,
+        dots: false,
+        responsive: [{
+                breakpoint: 976,
+                settings: {
+                    arrows: false,
+                    centerMode: false,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: false,
+                    centerPadding: '40px',
+                    slidesToShow: 2
+                }
+            }, {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: false,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
 })
