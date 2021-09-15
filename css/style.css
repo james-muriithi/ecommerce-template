@@ -308,9 +308,12 @@ header .header-menu {
     opacity: 1 !important;
     visibility: initial; }
   .collection-tabs .product-tabs .product-tabs-details .item-product .product-thumbnail {
-    position: relative; }
+    position: relative;
+    margin-right: auto;
+    margin-left: auto; }
   .collection-tabs .product-tabs .product-tabs-details .item-product .group-buttons {
     position: absolute;
+    width: 100%;
     bottom: 30px;
     left: 50%;
     -webkit-transform: translateX(-50%);

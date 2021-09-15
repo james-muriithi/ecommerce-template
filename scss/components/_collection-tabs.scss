@@ -97,9 +97,12 @@
                 }
                 .product-thumbnail {
                     position: relative;
+                    margin-right: auto;
+                    margin-left: auto;
                 }
                 .group-buttons {
                     position: absolute;
+                    width: 100%;
                     bottom: 30px;
                     left: 50%;
                     -webkit-transform: translateX(-50%);
