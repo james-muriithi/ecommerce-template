@@ -126,4 +126,29 @@ $(function() {
             }
         ]
     });
-})
+
+    // copyright year
+    $('.coyright-date').text(new Date().getFullYear());
+
+    // flash Deals
+    // expiry add 5 days
+    const expiryDate = moment().add(5, 'days');
+
+    updateFlashDealTime(expiryDate);
+
+    setInterval(() => {
+        updateFlashDealTime(expiryDate);
+    }, 1000);
+
+});
+
+function updateFlashDealTime(endDate) {
+    const now = moment();
+
+    const duration = moment.duration(endDate.diff(now));
+
+    $('.seconds').text(duration._data.seconds);
+    $('.minutes').text(duration._data.minutes);
+    $('.hours').text(duration._data.hours);
+    $('.days').text(duration._data.days);
+}
